@@ -1,0 +1,44 @@
+https://docs.google.com/forms/d/e/1FAIpQLScCgNa_ElmeRFM2Nxnr_9wikWj_g2C_qpQEjeD3vOlp_7-y3Q/formResponse
+?usp=pp_url&
+entry.81594963=email
+
+//contact us
+
+https://docs.google.com/forms/d/e/1FAIpQLSc0AOIBeavYdL0TcDiOo54vkUIQogCeIcGYTvD3cmRTTTKeKg/formResponse
+?usp=pp_url&
+entry.352249280
+=name&
+entry.2119283096
+=email&
+entry.222870460
+=number&
+entry.1500247731
+=messsage
+
+orders
+https://docs.google.com/forms/d/e/1FAIpQLScRpaFkimDm3i16rKsG2r4ibEOtOEG6dLwqbOCOUjO4m7-0NA/formResponse
+?usp=pp_url&
+entry.988110467=name&
+entry.1024633885=number&
+entry.100304328=mail&
+entry.201435664=product&
+entry.1349522160=size
+entry.1190688027=quantity
+
+customized tshirts
+
+https://docs.google.com/forms/d/e/1FAIpQLSdKMLj1F2yvzs9ZSHj7zYq3zUs-8InNzRjv_mMGZxps8r8oAw/formResponse
+?usp=pp_url&
+entry.1581327318=name
+entry.145794541=name&
+entry.1358533032=name&
+entry.2074243468=name&
+entry.1289629035=name
+
+customized mug
+https://docs.google.com/forms/d/e/1FAIpQLSe5DJ-IHWZgAT-rZnWWzLN5E3nLxW_Ul8c4JvbqwIr8D1lGig/formResponse
+?usp=pp_url&
+entry.911415493=null&
+entry.1822334374=null&
+entry.134946287=null&
+entry.939742261=null

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensweats</title>
+    <link rel="icon" href="image/title.jpg">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!-- slider links -->
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="left-navbar" onclick="openNavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <h1>Ensweats</h1>
+
+
+            <div class="navbar-links">
+                <p class="navbar-link"><a href="index.html">Home</a></p>
+                <p class="navbar-link"><a href="Aboutus.html">About US</a></p>
+                <p class="navbar-link"><a href="contact.html">Contact US</a></p>
+            </div>
+
+            <div class="navbar-menu-toggle" onclick="showNavbar()">
+                <i class="fa-solid fa-house"></i>
+            </div>
+        </nav>
+
+        <div class="side-navbar">
+            <p style="text-align: right;" onclick="closeNavbar()">
+                <i class="fa-solid fa-xmark"></i>
+            </p>
+            <div class="side-navbar-links">
+                <p class="navbar-link"><a href="index.html">Home</a></p>
+                <p class="navbar-link"><a href="Aboutus.html">About US</a></p>
+                <p class="navbar-link"><a href="contact.html">Contact US</a></p>
+            </div>
+        </div>
+
+        <div class="left-navbar-menu">
+            <p style="text-align: right;" onclick="hideNavbar()">
+                <i class="fa-solid fa-xmark"></i>
+            </p>
+            <h1>Ensweats</h1><br>
+            <div class="left-navbars">
+                <h2>Shirts</h2><br>
+                <ul>
+                    <li><a href="formalshirts.html">Formal Shirts</a></li>
+                    <li><a href="drop-shoulder.html">Drop-shoulder Shirts</a></li>
+                    <li><a href="Zip-type.html">Zip-type Shirts</a></li>
+                    <li><a href="funkyshirts.html">Funky Shirts</a></li>
+                    <li><a href="causalshirts.html">Casual Shirts</a></li>
+                </ul><br>
+                <h2>T-shirts</h2>
+                <ul>
+                    <li><a href="oversizedtshirts.html">Over-sized tshirts</a></li>
+                    <li><a href="launchingpage.html">Half-sleeves tshirts</a></li>
+                    <li><a href="launchingpage.html">Full-sleeves tshirts</a></li>
+                    <li><a href="customizedtshirts.html">Customized tshirts</a></li>
+                </ul><br>
+                <h2><a href="combosets.html">Combo Set</a></h2><br>
+                <h2>Pants</h2>
+                <ul>
+                    <li><a href="baggypants.html">Baggy pants</a></li>
+                    <li><a href="cargopants.html">Cargo pants</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- SLIDER
+        <div id="2"></div>
+        <script>
+            load("slider.html");
+            function load(url)
+            {
+                req = new XMLHttpRequest();
+                req.open("GET", url, false);
+                req.send(null);
+                document.getElementById(2).innerHTML = req.responseText;
+            }
+        </script> -->
+        <div class="header-image">
+            <img src="image/header image/header1.jpg" alt="image">
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="images">
+            <input type="radio" name="slide" id="img1" checked>
+            <input type="radio" name="slide" id="img2">
+            <input type="radio" name="slide" id="img4">
+
+            <img src="image/header image/header1.jpg" class="m1" alt="img1">
+            <img src="image/header image/header2.jpg" class="m2" alt="img2">
+            <img src="image/header image/header4.jpg" class="m4" alt="img4">
+        </div>
+        <div class="dots">
+            <label for="img1"></label>
+            <label for="img2"></label>
+            <label for="img4"></label>
+        </div>
+    </div>
+    <div class="marquee-container">
+        <div class="marquee-text">
+            <h3>Get 20% offer on each purchase till dec 31st/Hurry up - Grab before it's gone...</h3>
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <center>
+            <h1 style="font-size: 50px;">Festival Offer</h1>
+            <p style="color: rgb(219, 219, 14); font-size: 80px; font-style: italic;">offers Zone</p>
+        </center>
+    </div>
+    <section class="hero-img">
+        <div class="hero-wrapper">
+            <h1 style="font-size: 200px;">Winter</h1>
+            <center>
+                <h2 style="color: rgb(195, 195, 19); font-style: italic; font-size: 80px;">Big Sale</h2><br>
+                <h3 style="font-size: 30px; font-style: oblique;">Get upto 30% off for each product</h3><br>
+                <a href="/merry-christmas-tree/dist/index.html"><button type="submit">show now</button></a>
+            </center>
+        </div>
+    </section>
+    <section class="hero-imgg">
+        <div class="hero-wrapperr">
+            <h1 style="font-size: 90px;">Winter</h1>
+            <center>
+                <h2 style="color: rgb(195, 195, 19); font-style: italic; font-size: 40px;">Big Sale</h2><br>
+                <h3 style="font-size: 18px; font-style: oblique; margin: -5px;">Get upto 30% off for each product</h3>
+                <br>
+                <a href="/merry-christmas-tree/dist/index.html"><button type="submit" style="margin-top: -80px;">show now</button></a>
+            </center>
+        </div>
+    </section>
+    <section>
+        <div class="new-collection">
+            <div class="portfolio" id="project">
+                <div class="main-text" id="project">
+                    <h2 style="font-size: 50px; font-style: italic; color: rgb(216, 216, 24); margin-top: 20px;">Latest
+                        Collections</h2>
+
+                    <div class="collections">
+                        <div class="row">
+                            <img src="image/collections/latest collections/img1.jpg">
+                            <div class="layer">
+                                <h5>Formal shirts</h5>
+                                <p><span style="color: rgb(215, 215, 25); font-size: 20px;">JANISh</span> Men regular
+                                    fit Full-sleeves black color JANISh fabric</p>
+                                <a href="formalshirts.html"><button style="width: 130px; height: 40px;">Show More</button></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="image/collections/latest collections/img2.jpg">
+                            <div class="layer">
+                                <h5>Formal shirts</h5>
+                                <p><span style="color: rgb(215, 215, 25); font-size: 20px;">JANISh</span> Men regular
+                                    fit Full-sleeves black color JANISh fabric</p>
+                                <a href="formalshirts.html"><button style="width: 130px; height: 40px;">Show More</button></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="image/collections/latest collections/img3.jpg">
+                            <div class="layer">
+                                <h5>Formal shirts</h5>
+                                <p><span style="color: rgb(215, 215, 25); font-size: 20px;">Printed Cotton</span> Men's
+                                    wear shirt fit Full-sleeves Cotton fabric</p>
+                                <a href="causalshirts.html"><button style="width: 130px; height: 40px;">Show More</button></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="image/collections/latest collections/img4.jpg">
+                            <div class="layer">
+                                <h5>Formal shirts</h5>
+                                <p><span style="color: rgb(215, 215, 25); font-size: 20px;">JANISh</span> Men regular
+                                    fit Full-sleeves black color JANISh fabric</p>
+                                <a href="formalshirts.html"><button style="width: 130px; height: 40px;">Show More</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div>
+            <center>
+                <h1 style="color: rgb(215, 215, 23); font-size: 60px;">Categories</h1>
+                <h3 style="color: black; font-size: 50px; font-style: italic;">Avaiable Products</h3>
+            </center>
+        </div>
+        <div class="collections-1">
+            <div>
+                <a href="baggypants.html"><img src="image/collections/collections avaiable/image1.png" alt="image1"></a>
+                <h2
+                    style="margin-left: 70px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Baggy pants</h3>
+            </div>
+            <div>
+                <a href="launchingpage.html"><img src="image/collections/collections avaiable/image2.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 70px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Formal pants</h2>
+            </div>
+            <div>
+                <a href="launchingpage.html"><img src="image/collections/collections avaiable/image3.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 70px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Formal pants</h2>
+            </div>
+            <div>
+                <a href="drop-shoulder.html"><img src="image/collections/collections avaiable/image4.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 30px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Drop shoulder T-shirts</h2>
+            </div>
+        </div>
+        <div class="collections-2">
+            <div>
+                <a href="formalshirts.html"><img src="image/collections/collections avaiable/image5.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 70px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Formal shirts</h2>
+            </div>
+            <div>
+                <a href="funkyshirts.html"><img src="image/collections/collections avaiable/image6.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 70px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Funky shirts</h2>
+            </div>
+            <div>
+                <a href="combosets.html"><img src="image/collections/collections avaiable/image7.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 70px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Combo sets</h2>
+            </div>
+            <div>
+                <a href="launchingpage.html"><img src="image/collections/collections avaiable/image8.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 70px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Hoddies</h2>
+            </div>
+        </div>
+
+        <div class="collections-12">
+            <div>
+                <a href="baggypants.html"><img src="image/collections/collections avaiable/image1.png" alt="image1"></a>
+                <h2
+                    style="margin-left: 50px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Baggy pants</h3>
+            </div>
+            <div>
+                <a href="launchingpage.html"><img src="image/collections/collections avaiable/image2.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 50px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Formal pants</h2>
+            </div>
+        </div><br>
+        <div class="collections-13">
+            <div>
+                <a href="launchingpage.html"><img src="image/collections/collections avaiable/image3.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 50px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Formal pants</h2>
+            </div>
+            <div>
+                <a href="drop-shoulder.html"><img src="image/collections/collections avaiable/image4.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 30px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Drop shoulder T-shirts</h2>
+            </div>
+        </div><br>
+        <div class="collections-14">
+            <div>
+                <a href="formalshirts.html"><img src="image/collections/collections avaiable/image5.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 50px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Formal shirts</h2>
+            </div>
+            <div>
+                <a href="funkyshirts.html"><img src="image/collections/collections avaiable/image6.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 60px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Funky shirts</h2>
+            </div>
+        </div><br>
+        <div class="collections-15">
+            <div>
+                <a href="combosets.html"><img src="image/collections/collections avaiable/image7.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 50px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Combo sets</h2>
+            </div>
+            <div>
+                <a href="launchingpage.html"><img src="image/collections/collections avaiable/image8.jpg" alt="image1"></a>
+                <h2
+                    style="margin-left: 70px; margin-top: 20px; font-weight: 800; font-style: italic; color: rgb(204, 204, 27);">
+                    Hoddies</h2>
+            </div>
+        </div>
+    </section>
+
+    <nav>
+        <div class="services">
+            <center>
+                <h1 style="font-size: 100px; font-style: italic; margin-top: -50px;">Our services</h1>
+            </center>
+            <div class="service-products">
+                <div>
+                    <a href="formalshirts.html"><img src="image/collections/services/image1.png" alt="1"></a>
+                    <h2 style="margin-left: 70px; color: rgb(204, 204, 23); font-style: italic; font-size: 50px;">Shirts</h2>
+                </div>
+                <div>
+                    <a href="customizedtshirts.html"><img src="image/collections/services/image2.png" alt="1"></a>
+                    <h2 style="margin-left: 5px; color: rgb(204, 204, 23); font-style: italic; font-size: 30px;">Customized T-shirts</h2>
+                </div>
+                <div>
+                    <a href="customizedmug.html"><img src="image/collections/services/image3.png" alt="1"></a>
+                    <h2 style="margin-left: 30px; color: rgb(204, 204, 23); font-style: italic; font-size: 30px;">Customized Mug</h2>
+                </div>
+                <div>
+                    <a href="oversizedtshirts.html"><img src="image/collections/services/image4.png" alt="1"></a>
+                    <h2 style="margin-left: 70px; color: rgb(204, 204, 23); font-style: italic; font-size: 50px;">T-shirts</h2>
+                </div>
+                <div>
+                    <a href="cargopants.html"><img src="image/collections/services/image5.png" alt="1"></a>
+                    <h2 style="margin-left: 70px; color: rgb(204, 204, 23); font-style: italic; font-size: 50px;">Pants</h2>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <center>
+                    <h1>Subscribe to our NewsLetter</h1>
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLScCgNa_ElmeRFM2Nxnr_9wikWj_g2C_qpQEjeD3vOlp_7-y3Q/formResponse" method="post" class="Subcribe">
+                        <input name="entry.81594963" type="email" id="inputBox" placeholder="Enter your email address" >
+                        <button onclick="handleClick()">Subcribe</button>
+                    </form>
+                    <div id="output"></div>
+                </center><br><br>
+                <h1 class="headingText">Ensweats</h1>
+                <h2>Feel the Comfort</h2><br><br>
+                <div class="page">
+                    <div class="talk-to-us">
+                        <h1>Talk to us</h1>
+                        <h4><i class="fa-solid fa-phone"></i>+91 9600-606-748</h4><br>
+                        <h4><i class="fa-solid fa-square-envelope"></i>ensweats@gmail.com</h4>
+                    </div>
+
+                    <div class="benefits">
+                        <h1>Our Unique offerings</h1><br>
+                        <ul>
+                            <li>Easy shipping</li>
+                            <li>Low cost</li>
+                            <li>Express Delivery</li>
+                            <li>Easy Exchange</li>
+                            <li>Easy Return</li>
+                        </ul>
+                    </div>
+                    <div class="follow us">
+                        <h1>Stay In Touch</h1><br>
+                        <a href="https://www.instagram.com/ensweats/profilecard/?igsh=NXJvaDlnaGt0ejFw"><i
+                                class="fa-brands fa-instagram"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Instagram</i><br><br></a>
+                        <a href="http://chat.whatsapp.com/LckNFWDvWg1F3wzdtCq5NO"><i
+                                class="fa-brands fa-square-whatsapp"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Whats app
+                            </i><br><br></a>
+                        <a href="https://t.me/+K_M0MotYrqpkY2Q1"><i class="fa-brands fa-telegram"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Telegram</i></a>
+                    </div>
+                    <div class="location">
+                        <h1>location <i class="fa-solid fa-location-dot"></i></h1>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.647565066861!2d77.85476817511667!3d12.605463487677227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7eb8485c7b7f%3A0x4584db2b25d5d56!2sS.B.S%20Ceramics!5e0!3m2!1sen!2sin!4v1732694953330!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="pages">
+                    <div class="talk-to-us" style="margin-left: -30px;">
+                        <h1>Talk to us</h1>
+                        <h4><i class="fa-solid fa-phone"></i>+91 9600-606-748</h4><br>
+                        <h4><i class="fa-solid fa-square-envelope"></i>ensweats@gmail.com</h4>
+                    </div><br>
+
+                    <div class="benefits">
+                        <h1 style="margin-left: -10;">Our Unique offerings</h1><br>
+                        <ul style="margin-left: 20px;">
+                            <li>Easy shipping</li>
+                            <li>Low cost</li>
+                            <li>Express Delivery</li>
+                            <li>Easy Exchange</li>
+                            <li>Easy Return</li>
+                        </ul>
+                    </div><br>
+                </div>
+                <div class="pages-2">
+                    <div class="follow us">
+                        <h1>Stay In Touch</h1><br>
+                        <a href="https://www.instagram.com/ensweats/profilecard/?igsh=NXJvaDlnaGt0ejFw"><i
+                                class="fa-brands fa-instagram"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Instagram</i><br><br></a>
+                        <a href="http://chat.whatsapp.com/LckNFWDvWg1F3wzdtCq5NO"><i
+                                class="fa-brands fa-square-whatsapp"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Whats app
+                            </i><br><br></a>
+                        <a href="https://t.me/+K_M0MotYrqpkY2Q1"><i class="fa-brands fa-telegram"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Telegram</i></a>
+                    </div><br>
+                    <div class="location">
+                        <h1>location <i class="fa-solid fa-location-dot"></i></h1>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.647565066861!2d77.85476817511667!3d12.605463487677227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7eb8485c7b7f%3A0x4584db2b25d5d56!2sS.B.S%20Ceramics!5e0!3m2!1sen!2sin!4v1732694953330!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+            <script src="scripts.js"></script>
+</body>
+
+</html>

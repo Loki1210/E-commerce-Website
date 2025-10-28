@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensweats</title>
+    <link rel="icon" href="image/title.jpg">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- font-icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- stylesheet-->
+    <link rel="stylesheet" href="collections.css">
+    <!-- slider links -->
+    <!-- <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar">
+            <div class="left-navbar" onclick="openNavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <h1>Ensweats</h1>
+
+
+            <div class="navbar-links">
+                <p class="navbar-link"><a href="index.html">Home</a></p>
+                <p class="navbar-link"><a href="Aboutus.html">About US</a></p>
+                <p class="navbar-link"><a href="contact.html">Contact US</a></p>
+            </div>
+
+            <div class="navbar-menu-toggle" onclick="showNavbar()">
+                <i class="fa-solid fa-house"></i>
+            </div>
+        </nav>
+
+        <div class="side-navbar">
+            <p style="text-align: right;" onclick="closeNavbar()">
+                <i class="fa-solid fa-xmark"></i>
+            </p>
+            <div class="side-navbar-links">
+                <p class="navbar-link"><a href="index.html">Home</a></p>
+                <p class="navbar-link"><a href="Aboutus.html">About US</a></p>
+                <p class="navbar-link"><a href="contact.html">Contact US</a></p>
+            </div>
+        </div>
+
+        <div class="left-navbar-menu">
+            <p style="text-align: right;" onclick="hideNavbar()">
+                <i class="fa-solid fa-xmark"></i>
+            </p>
+            <h1>Ensweats</h1><br>
+            <div class="left-navbars">
+                <h2>Shirts</h2><br>
+                <ul>
+                    <li><a href="formalshirts.html">Formal Shirts</a></li>
+                    <li><a href="drop-shoulder.html">Drop-shoulder Shirts</a></li>
+                    <li><a href="Zip-type.html">Zip-type Shirts</a></li>
+                    <li><a href="funkyshirts.html">Funky Shirts</a></li>
+                    <li><a href="causalshirts.html">Casual Shirts</a></li>
+                </ul><br>
+                <h2>T-shirts</h2>
+                <ul>
+                    <li><a href="oversizedtshirts.html">Over-sized tshirts</a></li>
+                    <li><a href="launchingpage.html">Half-sleeves tshirts</a></li>
+                    <li><a href="launchingpage.html">Full-sleeves tshirts</a></li>
+                    <li><a href="#">Customized tshirts</a></li>
+                </ul><br>
+                <h2><a href="combosets.html">Combo Set</a></h2><br>
+                <h2>Pants</h2>
+                <ul>
+                    <li><a href="baggypants.html">Baggy pants</a></li>
+                    <li><a href="cargopants.html">Caego pants</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div style="margin: 150px;">
+        <center>
+            <img src="image/varietes/launching soon/image1.png" alt="image">
+            <br>
+            <br>
+            <h1 style="padding: 20px; font-size: 100px; font-weight: bold; font-style: italic; color: rgb(232, 232, 9);">this products will Launching Soon</h1>
+        </center>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <center>
+                    <h1>Subscribe to our NewsLetter</h1>
+                    <nav class="Subcribe">
+                        <input type="email" id="inputBox" placeholder="Enter your email address">
+                        <button onclick="handleClick()">Subcribe</button>
+                    </nav>
+                    <div id="output"></div>
+                </center><br><br>
+                <h1 class="headingText">Ensweats</h1>
+                <h2>Feel the Comfort</h2><br><br>
+                <div class="page">
+                    <div class="talk-to-us">
+                        <h1>Talk to us</h1>
+                        <h4><i class="fa-solid fa-phone"></i>+91 9600-606-748</h4><br>
+                        <h4><i class="fa-solid fa-square-envelope"></i>ensweats@gmail.com</h4>
+                    </div>
+
+                    <div class="benefits">
+                        <h1>Our Unique offerings</h1><br>
+                        <ul>
+                            <li>Easy shipping</li>
+                            <li>Low cost</li>
+                            <li>Express Delivery</li>
+                            <li>Easy Exchange</li>
+                            <li>Easy Return</li>
+                        </ul>
+                    </div>
+                    <div class="follow us">
+                        <h1>Stay In Touch</h1><br>
+                        <a href="https://www.instagram.com/ensweats/profilecard/?igsh=NXJvaDlnaGt0ejFw"><i
+                                class="fa-brands fa-instagram"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Instagram</i><br><br></a>
+                        <a href="http://chat.whatsapp.com/LckNFWDvWg1F3wzdtCq5NO"><i
+                                class="fa-brands fa-square-whatsapp"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Whats app
+                            </i><br><br></a>
+                        <a href="https://t.me/+K_M0MotYrqpkY2Q1"><i class="fa-brands fa-telegram"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Telegram</i></a>
+                    </div>
+                    <div class="location">
+                        <h1>location <i class="fa-solid fa-location-dot"></i></h1>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.647565066861!2d77.85476817511667!3d12.605463487677227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7eb8485c7b7f%3A0x4584db2b25d5d56!2sS.B.S%20Ceramics!5e0!3m2!1sen!2sin!4v1732694953330!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <div class="pages">
+                    <div class="talk-to-us" style="margin-left: -30px;">
+                        <h1>Talk to us</h1>
+                        <h4><i class="fa-solid fa-phone"></i>+91 9600-606-748</h4><br>
+                        <h4><i class="fa-solid fa-square-envelope"></i>ensweats@gmail.com</h4>
+                    </div><br>
+
+                    <div class="benefits">
+                        <h1 style="margin-left: -10;">Our Unique offerings</h1><br>
+                        <ul style="margin-left: 20px;">
+                            <li>Easy shipping</li>
+                            <li>Low cost</li>
+                            <li>Express Delivery</li>
+                            <li>Easy Exchange</li>
+                            <li>Easy Return</li>
+                        </ul>
+                    </div><br>
+                </div>
+                <div class="pages-2">
+                    <div class="follow us">
+                        <h1>Stay In Touch</h1><br>
+                        <a href="https://www.instagram.com/ensweats/profilecard/?igsh=NXJvaDlnaGt0ejFw"><i
+                                class="fa-brands fa-instagram"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Instagram</i><br><br></a>
+                        <a href="http://chat.whatsapp.com/LckNFWDvWg1F3wzdtCq5NO"><i
+                                class="fa-brands fa-square-whatsapp"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Whats app
+                            </i><br><br></a>
+                        <a href="https://t.me/+K_M0MotYrqpkY2Q1"><i class="fa-brands fa-telegram"
+                                style="color: #ffffff; margin-left: 5px; font-style: italic;"> Telegram</i></a>
+                    </div><br>
+                    <div class="location">
+                        <h1>location <i class="fa-solid fa-location-dot"></i></h1>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3893.647565066861!2d77.85476817511667!3d12.605463487677227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae7eb8485c7b7f%3A0x4584db2b25d5d56!2sS.B.S%20Ceramics!5e0!3m2!1sen!2sin!4v1732694953330!5m2!1sen!2sin"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

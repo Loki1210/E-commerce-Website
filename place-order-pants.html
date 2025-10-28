@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Order Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .order-form {
+            background: #ffffff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        .order-form h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            outline: none;
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .price-tag {
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="order-form">
+        <h2>Place Order</h2>
+        <form id="orderForm" class="form-group" action="https://docs.google.com/forms/d/e/1FAIpQLScRpaFkimDm3i16rKsG2r4ibEOtOEG6dLwqbOCOUjO4m7-0NA/formResponse" method="post">
+                <input type="text" id="name" name="entry.988110467" placeholder="Enter your name" required><br><br>
+                <input type="tel" id="number" name="entry.1024633885" placeholder="Enter your phone number" required><br><br>
+                <input type="email" id="email" name="entry.100304328" placeholder="Enter your email address" required><br><br>
+                <input id="product" name="entry.201435664" type="text" placeholder="Enter product Code(eg:code:fs1)" required><br><br>
+                        <!-- <option value="Product A">code:fs1</option>
+                        <option value="Product A">code:fs2</option>
+                        <option value="Product A">code:fs3</option>
+                        <option value="Product A">code:fs4</option>
+                        <option value="Product A">code:fs5</option>
+                        <option value="Product A">code:fs6</option>
+                        <option value="Product A">code:fs7</option>
+                        <option value="Product B">code:ds1</option>
+                        <option value="Product B">code:ds2</option>
+                        <option value="Product C">code:zs1</option>
+                        <option value="Product D">code:fus1</option>
+                        <option value="Product D">code:fus2</option>
+                        <option value="Product E">code:cs1</option>
+                        <option value="Product E">code:cs2</option>
+                        <option value="Product E">code:cs3</option>
+                        <option value="Product E">code:cs4</option>
+                        <option value="Product F">code:ot1</option>
+                        <option value="Product F">code:ot2</option>
+                        <option value="Product F">code:ot3</option>
+                        <option value="Product G">code:cos1</option>
+                        <option value="Product G">code:cos2</option>
+                        <option value="Product H">code:bp1</option>
+                        <option value="Product I">code:cp1</option>
+                        <option value="Product I">code:cp2</option>
+                </select><br><br> -->
+                <input id="product" name="entry.1349522160" type="text" placeholder="Enter Size(eg:L,M,XL)"><br><br>
+                    <!-- <option value="Product A">M</option>
+                    <option value="Product A">L</option>
+                    <option value="Product B">XL</option>
+                    <option value="Product C">XXL</option>
+                </select><br><br> -->
+                <input type="number" id="quantity" name="entry.1190688027" min="1" value="1" required><br><br>
+            <div class="price-tag" id="priceTag">Price:749</div><br><br>
+            <button type="submit" class="submit-btn">Submit Order</button>
+        </form>
+    </div>
+
+
+    <script>
+        const pricePerUnit = 749; // Base price per unit
+        const quantityInput = document.getElementById('quantity');
+        const priceTag = document.getElementById('priceTag');
+
+        quantityInput.addEventListener('input', () => {
+            const quantity = parseInt(quantityInput.value) || 1;
+            const totalPrice = pricePerUnit * quantity;
+            priceTag.textContent = `Price: {totalPrice}`;
+        });
+        // orderForm.addEventListener('submit', (e) => {
+        //     e.preventDefault();
+        //     alert('Thank you for your order!Our manager will you soon for further steps'
+        //     );
+        //     orderForm.reset();
+        //     priceTag.textContent = `Price: $${pricePerUnit}`;
+        // });
+    </script>
+</body>
+</html>
